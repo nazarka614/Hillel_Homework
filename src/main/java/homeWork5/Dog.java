@@ -37,7 +37,11 @@ public class Dog {
     }
 
     public void setHeight(int height) {
-        this.height = height;
+        if (height >= 10 && height <= 130) {
+            this.height = height;
+        }else {
+            this.height = 80;
+        }
     }
 
     public String getName() {
@@ -61,7 +65,11 @@ public class Dog {
     }
 
     public void setAge(int age) {
-        this.age = age;
+        if (age >= 0 && age <= 17) {
+            this.age = age;
+        }else {
+            this.age = 7;
+        }
     }
     public void print(){
         System.out.printf("Name: %s \nColor: %s \nHeight: %d \nAge: %d \n",name,color,height,age);
