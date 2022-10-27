@@ -1,4 +1,4 @@
-package objects;
+package homeWork6.objects;
 
 public class Cat extends Animal{
     private String color;

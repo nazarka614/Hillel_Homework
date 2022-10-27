@@ -1,6 +1,6 @@
 package homeWork6.main;
 
-import objects.Cat;
+import homeWork6.objects.Cat;
 
 public class main {
     public static void main(String[] args) {
