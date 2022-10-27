@@ -1,4 +1,4 @@
-package homeWork6.objects;
+package objects;
 
 public class Cat extends Animal{
     private String color;
@@ -10,7 +10,6 @@ public class Cat extends Animal{
 
     public Cat() {
         this.color = "Black";
-
     }
 
     public String getColor() {
@@ -23,7 +22,7 @@ public class Cat extends Animal{
 
     @Override
     public void say() {
-            System.out.println(("Vegetarian: " + isVegetarian() + "\nFeed: " + getEats() + "\nLegs: " + getNoOfLegs()) + "\nColor: " + getColor());
+        System.out.println(("Vegetarian: " + isVegetarian() + "\nFeed: " + getEats() + "\nLegs: " + getNoOfLegs()) + "\nColor: " + getColor());
 
     }
 }

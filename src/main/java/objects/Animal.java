@@ -1,4 +1,4 @@
-package homeWork6.objects;
+package objects;
 
 public class Animal {
     private boolean vegetarian = true;
