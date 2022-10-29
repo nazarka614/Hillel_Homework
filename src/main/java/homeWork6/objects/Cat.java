@@ -8,7 +8,8 @@ public class Cat extends Animal{
         this.color = color;
     }
 
-    public Cat() {
+    public Cat(boolean vegetarian, String eats, int noOfLegs) {
+        super(vegetarian, eats, noOfLegs);
         this.color = "Black";
     }
 
