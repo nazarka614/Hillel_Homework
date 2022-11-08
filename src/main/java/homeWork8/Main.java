@@ -5,12 +5,13 @@ import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
-        String string = "масло, масло, масло, колбаса, молоко, Кот, Собака, том, Том, рыба";
+        String string = "масло, мас..........ло, масло, колбаса.....   ....., молоко, Кот, Соба.     ........ка, том, Том, рыба, рыба..................";
         updateString(string);
+
     }
     private static void updateString(String string){
-        string = string.toLowerCase();
-        String[] words = string.split(", ");
+        string = string.toLowerCase().replace(".", "").replace(" ", "");;
+        String[] words = string.split(",");
         int t =  words.length;
         HashSet<String> h = new HashSet<String>();
         for (int i = 0; i<=t-1; i++){h.add(words[i]);
