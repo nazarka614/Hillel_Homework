@@ -1,8 +1,5 @@
 package homeWork8;
-
-import java.util.Collections;
 import java.util.HashSet;
-
 public class Main {
     public static void main(String[] args) {
         String string = "масло, мас..........ло, масло, колбаса.....   ....., молоко, Кот, Соба.     ........ка, том, Том, рыба, рыба..................";
