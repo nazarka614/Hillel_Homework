@@ -4,12 +4,11 @@ import java.util.HashSet;
 
 public class Main {
     public static void main(String[] args) {
-        String string = "масло, мас..........ло, масло,te........st,te......st, Nazar,nazar,колбаса....................   ....., молоко, Кот, Соба.     ........ка, том, Том, рыба, рыба..................";
+        String string = "масло, мас..........ло, масло,te........st,te......st, Nazar,nazar,колбаса....................   .....,molotok, молоко, Кот, Соба.     ........ка, том, Том, рыба, рыба..................";
         updateString(string);
     }
     private static void updateString(String string){
-        string = string.toLowerCase().replace(".", "").replace(" ", "");;
-        String[] words = string.split(",");
+        String[] words = string.toLowerCase().replace(".", "").replace(" ", "").split(",");
         HashSet<String> myHashSetList = new HashSet<String>();
         Collections.addAll(myHashSetList, words);
         String[] words2 = myHashSetList.toString().split(",");
