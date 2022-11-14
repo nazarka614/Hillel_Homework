@@ -8,7 +8,7 @@ public class main {
         HashMap <String , Product> map = new HashMap<>();
         map.put("Footboll", new Product(Type.Sport));
         map.put("Kukla", new Product(Type.Girly));
-        map.put("Monopoly", new Product(Type.TabeleGame));
+        map.put("Monopoly", new Product(Type.TableGame));
         map.put("Car", new Product(Type.Sport));
         map.put("Boll", new Product(Type.Sport));
         printKay(map);
